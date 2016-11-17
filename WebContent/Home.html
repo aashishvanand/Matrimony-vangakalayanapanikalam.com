@@ -1,0 +1,158 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style> 
+.fixed-bg {
+    background-image: url("1.gif");
+    background-attachment: fixed;
+	min-height:100%;
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	}
+.hometext {
+    position:absolute;
+	left:50px;
+	top:200px;
+    width:60%;
+	height:auto;
+	color:white;
+	font-size:3em;
+	background:#000000;
+	opacity:0.7;
+	text-shadow:10px 10px 10px orange;
+	font-family:"I Love What You Do!!..";
+	border:3px black ridge;
+	box-shadow:10px 10px 10px white;
+	text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+
+#fo {
+	position:absolute;
+	right:100px;
+	top:250px;
+    width:auto;
+	border:3px black ridge;
+	box-shadow:10px 10px 10px white;
+	font-family:"Akbar Plain";
+	color:white;
+	text-shadow:10px 10px 10px orange;
+	height:auto;
+	background:#000000;
+	opacity:0.7;
+	}
+
+
+ul li
+{
+float:left;
+margin-left:110px;
+margin-top:100px;
+font-size:1.3em;
+color:white;
+}
+
+ul li:hover
+{
+text-shadow:10px 10px 10px black;
+font-size:2em;
+}
+
+a
+{
+text-decoration:none;
+color:white;
+font-family:"Akbar Plain";
+}
+
+	
+label
+	{
+	color:white;
+	text-shadow:10px 10px 10px black;
+	font-family:"Akbar Plain";
+	}
+ #1
+ {
+ height:2px
+ width:px;
+ }
+ 
+ #log{
+  height:35px;
+	width:172px;
+	background-color:#FF5722;
+		
+ }
+
+
+	
+</style>
+<script>
+
+
+function validateForm() {
+	
+	    var mobile=form.phone.value;
+	     if(mobile.length!=10)
+	    	{
+	    	 
+	    	window.alert("Pls Enter Valid Mobile Number");
+	        return false;
+	    	}
+	    
+	  	     
+		    
+    }
+	</script>
+<title>Vanga Kalayana Panikalam.com</title>
+</head>
+<body>
+
+<div class="fixed-bg">
+<b><ul type="none">
+<li><a href="#">HOME</a></li>
+<li><a href="Signup.html">SIGN UP</a></li>
+<li><a href="Reachus.html">REACH US!</a></li>
+<li><a href="Aboutus.html">ABOUT US!</a></li>
+<li><a href="Reviews.html">REVIEWS</a></li>
+</ul></b>
+<div class="hometext">
+
+<B>We Have matched over <span id="t1">  </span> couples and still counting..!
+Vanga Kalayana Panikalam.com is the the best among the
+website that provides Free Service that matches 
+couples based on their taste.!</B>
+</div>
+<div id="fo">
+<form method="post" action="login.jsp" onsubmit="return validateForm()" id="form"  >
+<table>
+<tr>
+<td><label>MOBILE:</label></td>
+<td><input type="tel" name="phone" placeholder="9xxxxxxxxx" maxlength="10"></td>
+</tr>
+<br>
+<tr>
+<td><label>PASSWORD:</label></td>
+<td><input id="1" type="password" name="password" placeholder="**********"></td>
+</tr>
+<tr>
+<td><a href="Forgotpassword.html">Forgot Password?</a></td>
+<td>
+<div>
+<input type="submit" value="login" id="log">
+</div>
+</td>
+</tr>
+</form>
+</div>
+
+
+
+
+</body>
+</html>

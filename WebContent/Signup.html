@@ -1,0 +1,323 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> Vanga Kalayana Panikalam.com</title>
+<style> 
+#star{
+  width:174px;   
+}
+#label1 {
+    width: 50px;
+}
+.fixed-bg {
+    background-image: url("1.gif");
+    background-attachment: fixed;
+	min-height:100%;
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	}
+.center 
+{
+margin:auto;
+	position:absolute;
+left:420px;
+top:180px;
+    width:29%;
+	border:3px black ridge;
+	box-shadow:10px 10px 10px white;
+	font-family:"Akbar Plain";
+	color:white;
+	text-shadow:10px 10px 10px orange;
+	height:auto;
+	background:#000000;
+	opacity:0.7;
+    }
+ul li
+{
+float:left;
+margin-left:110px;
+margin-top:100px;
+font-size:1.3em;
+color:white;
+}
+
+ul li:hover
+{
+text-shadow:10px 10px 10px black;
+font-size:2em;
+}
+
+a
+{
+text-decoration:none;
+color:white;
+font-family:"Akbar Plain";
+}
+
+label
+{
+color:white;
+}
+
+ #log{
+  height:35px;
+	width:172px;
+	background-color:#FF5722;
+		
+ }
+</style>
+<title>Vanga Kalayanam Panikalam.com</title>
+<script>
+function validateForm() {
+	
+	    var month=form.month.value;
+	    var date=form.date.value;
+	    var mobile=form.phone.value;
+	    var d = new Date();
+	    var n = d.getFullYear();
+	    var year=form.year.value;
+	    
+	    if(month==02)
+    	{
+	    	if(date>=28)
+    	windo3w.alert("Check Date");
+       return false;
+    	}
+	    else if(mobile.length!=10)
+	    	{
+	    	 
+	    	window.alert("Pls Enter Valid Mobile Number");
+	        return false;
+	    	}
+	    
+	  	     
+	    else if(year>=(n-18))
+	    	{
+	    	window.alert("Not Eligible for Marriage");
+	    	return false;
+	    	}
+	    
+	    else
+	    	{
+	    	return true;
+	    	}
+	    
+    }
+	</script>
+</head>
+<body>
+
+<div class="fixed-bg">
+
+<b><ul type="none">
+<li><a href="Home.html">HOME</a></li>
+<li><a href="#">SIGN UP</a></li>
+<li><a href="Reachus.html">REACH US!</a></li>
+<li><a href="Aboutus.html">ABOUT US!</a></li>
+<li><a href="Reviews.html">REVIEWS</a></li>
+</ul></b>
+
+<div class="center">
+
+<marquee><H3>Sign Up Now For Free!</h3></marquee>
+<form method="post" action="signup.jsp" id="form" onsubmit="return validateForm()" name="form">
+
+<table border="0px">
+<tr>
+<td>
+<label>
+First Name: </label></td><td><input type="text" name="firstname" required autofocus> <br>
+</td>
+<tr>
+<td>
+<label>Last Name:</label></td><td><input type="text" name="lastname" required> <br>
+</td>
+</tr>
+<tr>
+<td>
+<label>I am a </label></td><td><input type="radio" name="sex" value="M" required><label>Bridegroom</label><input type="radio" name="sex" value="F"><label>Bride</label> <br>
+</td>
+</tr>
+<tr>
+<td>
+<label>Birthday: </label></td>
+<td>
+<select name="date">
+<option value="01">1</option>
+<option value="02">2</option>
+<option value="03">3</option>
+<option value="04">4</option>
+<option value="05">5</option>
+<option value="06">6</option>
+<option value="07">7</option>
+<option value="08">8</option>
+<option value="09">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="month">
+<option value="01">Jan</option>
+<option value="02">Feb</option>
+<option value="03">Mar</option>
+<option value="04">Apr</option>
+<option value="05">May</option>
+<option value="06">Jun</option>
+<option value="07">Jul</option>
+<option value="08">Aug</option>
+<option value="09">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nov</option>
+<option value="12">Dec</option>
+</select>
+<input list="year" name="year" required id="label1">
+<datalist id="year">
+<option value="1995">
+<option value="1996">
+</datalist>
+
+</td>
+</tr>
+<tr>
+<td>
+<label>Religion </label></td><td><select name="religion" required>
+    <option value="HINDU">Hindu</option>
+    <option value="MUSLIM">Muslim</option>
+    <option value="CHRISTIAN">Christian</option>
+    <option value="No">No Trust in Religion</option>
+	</select>
+</td>
+</tr>
+<tr>
+<td>
+<label>  I &nbsp live &nbsp in &nbsp country : </label></td><td><input list="country" name="country" required>
+  <datalist id="country">
+    <option value="India">
+    <option value="United States of America">
+    <option value="Sri Lanka">
+    <option value="United Kingdom">
+    <option value="Singapore">
+  </datalist>
+  <br>
+</td>
+</tr>  
+<tr>
+<tr>
+<td>
+<label>  Qualification </label></td><td><input list="qualification" name="qualification" required>
+  <datalist id="qualification">
+    <option value="B.E">
+    <option value="M.E">
+    <option value="M.B.A">
+    <option value="Viscomm">
+    <option value="M.Comm">
+	<option value="B.Comm">
+	<option value="B.Ed">
+  </datalist>
+  <br>
+</td>
+</tr>
+  
+<tr>
+<td>
+<label>Star/Rasi:</label></td>
+<td>
+<select name="star" id="star">
+<option value="ASWINI (Mesha Rasi)">ASWINI (Mesha Rasi)</option>
+<option value="BHARANI (Mesha Rasi)">BHARANI (Mesha Rasi)</option>
+<option value="KRITHIKAI 1st,Padham(Mesha Rasi)">KRITHIKAI1st,Padham(Mesha Rasi)</option>
+<option value="KRITHIKAI 2,3,4th Padham (Rishaba Rasi)">KRITHIKAI 2,3,4th Padham (Rishaba Rasi)</option>
+<option value="ROHINI (Rishaba Rasi)">ROHINI (Rishaba Rasi)</option>
+<option value="MIRUGASEERSHAM 1&2nd Padham (Rishaba Rasi)">MIRUGASEERSHAM 1&2nd Padham (Rishaba Rasi)</option>
+<option value="MIRUGASEERSHAM 3&4th Padham (Mithuna Rasi)">MIRUGASEERSHAM 3&4th Padham (Mithuna Rasi)</option>
+<option value="THIRUVADHIRAI (Mithuna Rasi)">THIRUVADHIRAI (Mithuna Rasi)</option>
+<option value="PUNARPOOSAM 1,2,3rd Padham (Mithuna Rasi)">PUNARPOOSAM 1,2,3rd Padham (Mithuna Rasi)</option>
+<option value="PUNARPOOSAM 4th Padham (Kadaka Rasi)">PUNARPOOSAM 4th Padham (Kadaka Rasi)</option>
+<option value="POOSAM (Kadaka Rasi)">POOSAM (Kadaka Rasi)</option>
+<option value="AYILYUM (Kadaka Rasi)">AYILYUM (Kadaka Rasi)</option>
+<option value="MAGAM (Simma Rasi)">MAGAM (Simma Rasi)</option>
+<option value="POORAM (Simma Rasi)">POORAM (Simma Rasi)</option>
+<option value="UTHIRAM Ist Padham (Simma Rasi)">UTHIRAM Ist Padham (Simma Rasi)</option>
+<option value="UTHIRAM 2,3&4 Padham (Kanni Rasi)">UTHIRAM 2,3&4 Padham (Kanni Rasi)</option>
+<option value="HASTHAM (Kanni Rasi)">HASTHAM (Kanni Rasi)</option>
+<option value="CHITHIRAI 1&2nd Padham (Kanni Rasi)">CHITHIRAI 1&2nd Padham (Kanni Rasi)</option>
+<option value="CHITHIRAI 3&4th Padham  (Thulam Rasi)">CHITHIRAI 3&4th Padham  (Thulam Rasi)</option>
+<option value="SWATHI (Thulam Rasi)">SWATHI  (Thulam Rasi)</option>
+<option value="VISAKAM 4th Padham (Vrichika Rasi)">VISAKAM  4th Padham (Vrichika Rasi)</option>
+<option value="ANUSHAM (Vrichika Rasi)">ANUSHAM  (Vrichika Rasi)</option>
+<option value="KETTAI (Vrichika Rasi)">KETTAI (Vrichika Rasi)</option>
+<option value="MOOLAM (Dhanusu Rasi)">MOOLAM  (Dhanusu Rasi)</option>
+<option value="POORADAM (Dhanusu Rasi)">POORADAM (Dhanusu Rasi)</option>
+<option value="UTHRADAM 1st,Padham (Dhanusu Rasi)">UTHRADAM 1st,Padham (Dhanusu Rasi)</option>
+<option value="UTHRADAM 2,3,4th Padham (Mahara Rasi)">UTHRADAM 2,3,4th Padham (Mahara Rasi)</option>
+<option value="THIRUVONAM (Mahara Rasi)">THIRUVONAM (Mahara Rasi)</option>
+<option value="AVITTAM 1&2nd Padham (Mahara Rasi)">AVITTAM 1&2nd Padham (Mahara Rasi)</option>
+<option value="AVITTAM 3&4th,Padham (Kumba Rasi)">AVITTAM 3&4th,Padham (Kumba Rasi)</option>
+<option value="SADHAYAM (Kumba Rasi)">SADHAYAM (Kumba Rasi)</option>
+<option value="POORATTATHI 1,2,3rd Padham (Kumba Rasi)">POORATTATHI 1,2,3rd Padham (Kumba Rasi)</option>
+<option value="POORATTATHI 4th Padham (Meena Rasi)">POORATTATHI 4th Padham (Meena Rasi)</option>
+<option value="UTTHIRATTATHI (Meena Rasi)">UTTHIRATTATHI (Meena Rasi)</option>
+<option value="REVATHI (Meena rasi)">REVATHI (Meena rasi)</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Mobile : </label> </td><td><input type="tel" name="phone" maxlength="10" required><br>
+</td>
+</tr>
+<tr>
+<td>
+<label>Email: </label></td><td><input type="email" name="email" required />
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<label>Upload a Photo:</label></td><td> 
+<input type="file"  id="ImageFile" accept="image/jpeg" />
+</td>
+</tr>
+<tr>
+<td>
+<label>Password </label></td><td><input type="password" name="password" /><br>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="submit" value="Register"  id="log" />
+</td>
+</tr>
+</form>
+</table>
+
+</div>
+</div>
+
+
+</body>
+</html>
